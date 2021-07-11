@@ -4,21 +4,26 @@
 /* commmon style or utilites */
 body{
     font-family: 'Poppins', sans-serif;
-    background-color:#F3F1FF;
+    /* background-color:#F3F1FF; */
+    background-color:#E5E5E5;
 }
 .container{
     background-color:#FFFFFF;
     width:870px;
     padding:30px;
     border:1px solid black;
+    border-radius:5px;
+    margin-top:21px;
 }
 hr{
     border: 1px solid #D1D1D1;
+    margin-bottom:28px;
     
 }
 main{
     display:flex;
-    justify-content: center;
+    flex-direction:column;
+    align-items:center;
 }
 /* top players style */
 .section-title{
@@ -47,4 +52,45 @@ main{
 .player-name{
     margin-left:16px;
     font-size:18px;
+}
+/*-----------------------------
+-------top blog styles--------- */
+.blogs{
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    /* grid-template-columns:1fr 1fr; */
+    border:1px solid red;
+    grid-row-gap:26px;
+}
+.blog{
+    display:flex;
+    border:1px solid black;
+}
+.blog .thumbnail img{
+    width:117px;
+    height:117px;
+}
+.blog-info{
+    margin-left:16px;
+}
+.blog-title{
+    font-size:20px;
+}
+.blog-author{
+    font-size:16px;
+    color: #9F9F9F;
+}
+.blog-author a{
+    color: #562EFF;
+    text-decoration:none;
+    font-size: 16px;
+
+    
+}
+/* top blog style end */
+/* start latest course */
+.course .course-banner img{
+    width: 224px;
+    height: 104px;
+
 }
